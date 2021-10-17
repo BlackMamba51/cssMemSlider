@@ -17,6 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 body {
+    width: 100%;
     overflow: hidden;
     background: linear-gradient(to bottom, #cc99ff 39%, #ff99cc 100%);
 }
@@ -126,4 +127,18 @@ body {
 }
 #slide5:checked ~ .slide5 {
     opacity: 1;
+}
+
+@media(max-width:375px) {
+    html,body {
+        overflow-x: hidden;
+    }
+    .controls {
+        display: flex;
+        top: 72%;
+        left: 28%;
+    }
+    .text {
+        top: 75%;
+    }
 }
